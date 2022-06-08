@@ -1,1 +1,1 @@
-# wordlehu_sugo
+# https://pistaba75.github.io/wordlehu_sugo
