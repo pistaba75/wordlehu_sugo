@@ -1,0 +1,88 @@
+select {
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	text-indent: 1px;
+	text-overflow: '';
+	font-size: 155%;
+	text-align: center;
+	text-align-last: center;
+	-moz-text-align-last: center;
+	background-color: inherit;
+	color: inherit;
+	padding: 0px;
+	margin: 0;
+	border: 0;
+}
+
+.is-at-wrong-position {
+	background-color: #e9b308;
+	color: white;
+}			
+
+.is-at-right-position {
+	background-color: #23c55e;
+	color: white;
+}
+
+#keyboard_grid > div {
+  text-align: center;
+  padding: 20px 0;
+}
+
+#keyboard_grid {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-template-areas:
+	'letter-cs letter-dz letter-dzs letter-gy letter-ly letter-ny letter-sz letter-ty letter-zs letter-ouml letter-uuml letter-oacute'
+  'letter-q letter-w letter-e letter-r letter-t letter-z letter-u letter-i letter-o letter-p letter-odblac letter-uacute'
+	'letter-a letter-s letter-d letter-f letter-g letter-h letter-j letter-k letter-l letter-eacute letter-aacute letter-udblac'
+	'reset-button reset-button letter-iacute letter-y letter-x letter-c letter-v letter-b letter-n letter-m search-button search-button';
+  gap: 2px;
+  padding: 5px;
+}			
+
+
+#keyboard_letter_a { grid-area: letter-a; }
+#keyboard_letter_aacute { grid-area: letter-aacute; }
+#keyboard_letter_b { grid-area: letter-b; }
+#keyboard_letter_c { grid-area: letter-c; }
+#keyboard_letter_cs { grid-area: letter-cs; }
+#keyboard_letter_d { grid-area: letter-d; }
+#keyboard_letter_dz { grid-area: letter-dz; }
+#keyboard_letter_dzs { grid-area: letter-dzs; }
+#keyboard_letter_e { grid-area: letter-e; }
+#keyboard_letter_eacute { grid-area: letter-eacute; }
+#keyboard_letter_f { grid-area: letter-f; }
+#keyboard_letter_g { grid-area: letter-g; }
+#keyboard_letter_gy { grid-area: letter-gy; }
+#keyboard_letter_h { grid-area: letter-h; }
+#keyboard_letter_i { grid-area: letter-i; }
+#keyboard_letter_iacute { grid-area: letter-iacute; }
+#keyboard_letter_j { grid-area: letter-j; }
+#keyboard_letter_k { grid-area: letter-k; }
+#keyboard_letter_l { grid-area: letter-l; }
+#keyboard_letter_m { grid-area: letter-m; }
+#keyboard_letter_n { grid-area: letter-n; }
+#keyboard_letter_ny { grid-area: letter-ny; }
+#keyboard_letter_o { grid-area: letter-o; }
+#keyboard_letter_oacute { grid-area: letter-oacute; }
+#keyboard_letter_ouml { grid-area: letter-ouml; }
+#keyboard_letter_odblac { grid-area: letter-odblac; }
+#keyboard_letter_p { grid-area: letter-p; }
+#keyboard_letter_q { grid-area: letter-q; }
+#keyboard_letter_r { grid-area: letter-r; }
+#keyboard_letter_s { grid-area: letter-s; }
+#keyboard_letter_sz { grid-area: letter-sz; }
+#keyboard_letter_t { grid-area: letter-t; }
+#keyboard_letter_ty { grid-area: letter-ty; }
+#keyboard_letter_u { grid-area: letter-u; }
+#keyboard_letter_uacute { grid-area: letter-uacute; }
+#keyboard_letter_uuml { grid-area: letter-uuml; }
+#keyboard_letter_udblac { grid-area: letter-udblac; }
+#keyboard_letter_v { grid-area: letter-v; }
+#keyboard_letter_w { grid-area: letter-w; }
+#keyboard_letter_x { grid-area: letter-x; }
+#keyboard_letter_y { grid-area: letter-y; }
+#keyboard_letter_z { grid-area: letter-z; }
+#form_reset_button { grid-area: reset-button; }
+#search_button { grid-area: search-button; }

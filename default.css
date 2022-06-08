@@ -1,0 +1,149 @@
+html,body {
+	height: 100%;
+	overflow: hidden
+}
+
+body {
+	margin: 0;
+	display: flex;
+	justify-content: center;
+	font-family: "Segoe UI","San Francisco","Helvetica Neue",sans-serif;
+	font-size: 18px;
+}
+
+main {
+	position: relative;
+	width: 100%;
+	max-width: 500px;
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	align-content: stretch
+}
+
+main header {
+	border-bottom: 1pt solid var(--frameLight);
+	height: 60px;
+	overflow-y: hidden
+}
+
+main h1,main h2 {
+	font-family: inherit;
+	margin: 0;
+	text-align: center;
+	font-weight: bold
+}
+
+main h1 {
+	font-size: 27px;
+	text-transform: uppercase
+}
+
+main h2 {
+	font-size: 16px;
+	margin-top: -5px
+}
+
+main>section {
+	width: 100%
+}
+
+#radiobuttons_grid {
+	display: grid;
+	grid-template-columns: auto auto;
+}
+
+#target_cell_spinner_area {
+	text-align: center;
+}
+
+#target_cell_grid {
+	display: grid;
+	grid-template-columns: 10px auto;
+	column-gap: 5px;
+	padding: 5px;
+}
+
+input[type="radio"] {
+	vertical-align: middle;
+margin-top: -1%;
+}
+
+#game_selector_section {
+	width: 100%;
+	padding-top: 2%;
+	padding-bottom: 5%;
+	padding-left: 0;
+	padding-right: 0;
+	user-select: none;
+	text-align: center;
+}
+
+option {
+	font-family: "Segoe UI","San Francisco","Helvetica Neue",sans-serif;
+}
+
+.c-target-cell {
+	border: 1px solid #666;
+	padding: 0px;
+}
+
+.c-letter-select-box {
+	border: 1px solid #666;
+	border-radius: 8% / 16%;
+	background-color: #e1e8f0;
+	text-align: center;
+	position: relative;
+	padding: 3px;
+	user-select: none;
+}
+
+.c-color-change-button {
+	border: 1px solid #666;
+	border-radius: 8% / 16%;
+	text-align: center;
+	font-size: 125%;
+	user-select: none;
+}
+
+.c-keyboard-letter {
+	border-radius: .3em;
+	background-color: #e1e8f0;
+	text-align: center;
+	color: black;
+	user-select: none;
+}			
+
+.c-action-button {
+	font-weight: bold;
+	font-size: 90%;
+	color: red;
+	user-select: none;
+}
+
+.is-hidden {
+	visibility: hidden;
+}
+
+.is-removed {
+	display: none;
+}
+
+.is-excluded {
+	background-color: #94a3b8;
+	color: white;
+}
+
+#letters_to_select_section {
+	min-height: 15%;
+}
+
+#letters_to_select_grid {
+	display: grid;		
+	grid-template-columns: repeat(5, fit-content(20px));
+	grid-template-rows: auto auto;
+	column-gap: 10px;
+	row-gap: 10px;
+	padding: 10px;
+	justify-content: center;
+}	

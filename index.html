@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="hu">
+	<head>
+	  <meta charset="utf-8"/>
+	  <meta name="google" content="notranslate">
+	  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+	  <meta property="og:type" content="website">
+	  <meta property="og:title" content="Wordle.hu súgó">
+	  <meta property="og:description" content='Segítség a "Szózat" és a "Szó reggelt" játékok rejtvényeinek megfejtéséhez - ha már a teljes szókincsed kifújt, de még mindig nincs meg a megfejtés...'>
+	  <link rel="stylesheet" href="./default.css">
+	  <link rel="stylesheet" href="./szozat.css" media="" id="c-szozat-css">
+	  <link rel="stylesheet" href="./szoreggelt.css" media="none" id="c-szoreggelt-css">
+	  <script src="./myscript.js"></script>
+	  <title>Wordle.hu súgó</title>
+	</head>
+	<body>
+		<main>
+			<header>
+				<h1>"Wordle.hu" s&uacute;g&oacute;</h1>
+				<h2>Szózat és Szó reggelt</h2>
+			</header>
+			<section id="game_selector_section">
+				<form name="game-selector-form" id="game_selector_form">
+					<div id="radiobuttons_grid">
+						<div>
+							<input type="radio" id="szozat-button" name="game-selector" value="szozat" checked="checked">
+							<label for="szozat-button">Sz&oacute;zat</label>
+						</div>
+						<div>
+							<input type="radio" id="szoreggelt-button" name="game-selector" value="szoreggelt">
+							<label for="szoreggelt-button">Sz&oacute reggelt</label>
+						</div>
+					</div>
+				</form>								
+			</section>
+
+			<section id="letters_to_select_section">
+				<div id="letters_to_select_grid">
+					<div class="c-letter-select-box" id="letter_to_select_box_1">
+						<select class="c-dropdown-listbox" id="letter_1">
+						</select>
+					</div>
+					<div class="c-letter-select-box" id="letter_to_select_box_2">
+						<select class="c-dropdown-listbox" id="letter_2">
+						</select>
+					</div>
+					<div class="c-letter-select-box" id="letter_to_select_box_3">
+						<select class="c-dropdown-listbox" id="letter_3">
+						</select>
+					</div>
+					<div class="c-letter-select-box" id="letter_to_select_box_4">
+						<select class="c-dropdown-listbox" id="letter_4">
+						</select>
+					</div>
+					<div class="c-letter-select-box" id="letter_to_select_box_5">
+						<select class="c-dropdown-listbox" id="letter_5">
+						</select>
+					</div>
+					<div id="color_change_button_1" class="c-color-change-button is-hidden" colspan=2>&nbsp;</div>
+					<div id="color_change_button_2" class="c-color-change-button is-hidden" colspan=2>&nbsp;</div>
+					<div id="color_change_button_3" class="c-color-change-button is-hidden" colspan=2>&nbsp;</div>
+					<div id="color_change_button_4" class="c-color-change-button is-hidden" colspan=2>&nbsp;</div>
+					<div id="color_change_button_5" class="c-color-change-button is-hidden" colspan=2>&nbsp;</div>
+				</div>				
+			</section>
+
+			<section id="keyboard_section">
+				<div id="keyboard_grid">
+					<div id="form_reset_button" class="c-keyboard-letter c-action-button">RESET!</div>
+					<div id="search_button" class="c-keyboard-letter c-action-button">Keres&eacute;s!</div>
+					<div id="keyboard_letter_a" class="c-keyboard-letter">A</div>
+					<div id="keyboard_letter_aacute" class="c-keyboard-letter">&Aacute;</div>
+					<div id="keyboard_letter_b" class="c-keyboard-letter">B</div>
+					<div id="keyboard_letter_c" class="c-keyboard-letter">C</div>
+					<div id="keyboard_letter_cs" class="c-keyboard-letter">CS</div>
+					<div id="keyboard_letter_d" class="c-keyboard-letter">D</div>
+					<div id="keyboard_letter_dz" class="c-keyboard-letter">DZ</div>
+					<div id="keyboard_letter_dzs" class="c-keyboard-letter">DZS</div>
+					<div id="keyboard_letter_e" class="c-keyboard-letter">E</div>
+					<div id="keyboard_letter_eacute" class="c-keyboard-letter">&Eacute;</div>
+					<div id="keyboard_letter_f" class="c-keyboard-letter">F</div>
+					<div id="keyboard_letter_g" class="c-keyboard-letter">G</div>
+					<div id="keyboard_letter_gy" class="c-keyboard-letter">GY</div>
+					<div id="keyboard_letter_h" class="c-keyboard-letter">H</div>
+					<div id="keyboard_letter_i" class="c-keyboard-letter">I</div>
+					<div id="keyboard_letter_iacute" class="c-keyboard-letter">&Iacute;</div>
+					<div id="keyboard_letter_j" class="c-keyboard-letter">J</div>
+					<div id="keyboard_letter_k" class="c-keyboard-letter">K</div>
+					<div id="keyboard_letter_l" class="c-keyboard-letter">L</div>
+					<div id="keyboard_letter_ly" class="c-keyboard-letter">LY</div>
+					<div id="keyboard_letter_m" class="c-keyboard-letter">M</div>
+					<div id="keyboard_letter_n" class="c-keyboard-letter">N</div>
+					<div id="keyboard_letter_ny" class="c-keyboard-letter">NY</div>
+					<div id="keyboard_letter_o" class="c-keyboard-letter">O</div>
+					<div id="keyboard_letter_oacute" class="c-keyboard-letter">&Oacute;</div>
+					<div id="keyboard_letter_ouml" class="c-keyboard-letter">&Ouml;</div>
+					<div id="keyboard_letter_odblac" class="c-keyboard-letter">&Odblac;</div>
+					<div id="keyboard_letter_p" class="c-keyboard-letter">P</div>
+					<div id="keyboard_letter_q" class="c-keyboard-letter">Q</div>
+					<div id="keyboard_letter_r" class="c-keyboard-letter">R</div>
+					<div id="keyboard_letter_s" class="c-keyboard-letter">S</div>
+					<div id="keyboard_letter_sz" class="c-keyboard-letter">SZ</div>
+					<div id="keyboard_letter_t" class="c-keyboard-letter">T</div>
+					<div id="keyboard_letter_ty" class="c-keyboard-letter">TY</div>
+					<div id="keyboard_letter_u" class="c-keyboard-letter">U</div>
+					<div id="keyboard_letter_uacute" class="c-keyboard-letter">&Uacute;</div>
+					<div id="keyboard_letter_uuml" class="c-keyboard-letter">&Uuml;</div>
+					<div id="keyboard_letter_udblac" class="c-keyboard-letter">&Udblac;</div>
+					<div id="keyboard_letter_v" class="c-keyboard-letter">V</div>
+					<div id="keyboard_letter_w" class="c-keyboard-letter">W</div>
+					<div id="keyboard_letter_x" class="c-keyboard-letter">X</div>
+					<div id="keyboard_letter_y" class="c-keyboard-letter">Y</div>
+					<div id="keyboard_letter_z" class="c-keyboard-letter">Z</div>
+					<div id="keyboard_letter_zs" class="c-keyboard-letter">ZS</div>
+				</div>
+			</section>
+			<section id="results_section">
+				<div id="target_cell_grid">
+					<div id="target_cell_spinner_area">&nbsp;</div>
+					<div id="target_cell" class="c-target-cell">&nbsp;</div>
+				</div>	
+			</section>
+		</main>
+	</body>
+</html>

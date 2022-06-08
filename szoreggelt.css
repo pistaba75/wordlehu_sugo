@@ -1,0 +1,76 @@
+select {
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	text-indent: 1px;
+	text-overflow: '';
+	font-size: 150%;
+	text-align: center;
+	text-align-last: center;
+	-moz-text-align-last: center;
+	background-color: inherit;
+	color: inherit;
+	padding: 0px;
+	margin: 0;
+	border: 0;
+}	
+
+.is-at-wrong-position {
+	background-color: #c25661;
+	color: white;
+}			
+
+.is-at-right-position {
+	background-color: #679e72;
+	color: white;
+}			
+
+#keyboard_grid > div {
+  text-align: center;
+  padding: 20px 0;
+}
+
+#keyboard_grid {
+  grid-template-columns: repeat(40, 1fr);
+  display: grid;
+  gap: 2px;
+  padding: 5px;
+}			
+
+
+#keyboard_letter_a { grid-area: 2 / 3 / span 1 / span 4; }
+#keyboard_letter_aacute { grid-area: 3 / 37 / span 1 / span 4; }
+#keyboard_letter_b { grid-area: 3 / 21 / span 1 / span 4; }
+#keyboard_letter_c { grid-area: 3 / 13 / span 1 / span 4; }
+#keyboard_letter_d { grid-area: 2 / 11 / span 1 / span 4; }
+#keyboard_letter_e { grid-area: 1 / 9 / span 1 / span 4; }
+#keyboard_letter_eacute { grid-area: 3 / 33 / span 1 / span 4; }
+#keyboard_letter_f { grid-area: 2 / 15 / span 1 / span 4; }
+#keyboard_letter_g { grid-area: 2 / 19 / span 1 / span 4; }
+#keyboard_letter_h { grid-area: 2 / 23 / span 1 / span 4; }
+#keyboard_letter_i { grid-area: 1 / 29 / span 1 / span 4; }
+#keyboard_letter_iacute { grid-area: 3 / 1 / span 1 / span 4; }
+#keyboard_letter_j { grid-area: 2 / 27 / span 1 / span 4; }
+#keyboard_letter_k { grid-area: 2 / 31 / span 1 / span 4; }
+#keyboard_letter_l { grid-area: 2 / 35 / span 1 / span 4; }
+#keyboard_letter_m { grid-area: 3 / 29 / span 1 / span 4; }
+#keyboard_letter_n { grid-area: 3 / 25 / span 1 / span 4; }
+#keyboard_letter_o { grid-area: 1 / 33 / span 1 / span 4; }
+#keyboard_letter_oacute { grid-area: 4 / 18 / span 1 / span 4; }
+#keyboard_letter_ouml { grid-area: 4 / 10 / span 1 / span 4; }
+#keyboard_letter_odblac { grid-area: 4 / 22 / span 1 / span 4; }
+#keyboard_letter_p { grid-area: 1 / 37 / span 1 / span 4; }
+#keyboard_letter_q { grid-area: 1 / 1 / span 1 / span 4; }
+#keyboard_letter_r { grid-area: 1 / 13 / span 1 / span 4; }
+#keyboard_letter_s { grid-area: 2 / 7 / span 1 / span 4; }
+#keyboard_letter_t { grid-area: 1 / 17 / span 1 / span 4; }
+#keyboard_letter_u { grid-area: 1 / 25 / span 1 / span 4; }
+#keyboard_letter_uacute { grid-area: 4 / 26 / span 1 / span 4; }
+#keyboard_letter_uuml { grid-area: 4 / 14 / span 1 / span 4; }
+#keyboard_letter_udblac { grid-area: 4 / 30 / span 1 / span 4; }
+#keyboard_letter_v { grid-area: 3 / 17 / span 1 / span 4; }
+#keyboard_letter_w { grid-area: 1 / 5 / span 1 / span 4; }
+#keyboard_letter_x { grid-area: 3 / 9 / span 1 / span 4; }
+#keyboard_letter_y { grid-area: 3 / 5 / span 1 / span 4; }
+#keyboard_letter_z { grid-area: 1 / 21 / span 1 / span 4; }
+#form_reset_button { grid-area: 4 / 3 / span 1 / span 7; }
+#search_button { grid-area: 4 / 34 / span 1 / span 7; }
